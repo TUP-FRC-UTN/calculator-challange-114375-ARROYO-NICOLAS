@@ -13,9 +13,9 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   valor1: number = 0;
   valor2: number = 0;
-  @Input() resultado: number = 0;
+  resultado: number = 0;
 
-  result(resultado: any){
-    this.resultado = resultado;
+  result(res: any){
+    this.resultado = res;
   }
 }

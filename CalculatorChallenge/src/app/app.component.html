@@ -6,9 +6,9 @@
     <h4>Valor 2</h4>
     <input type="number" [(ngModel)]="valor2">
   </div>
+  <app-calculadora [valor1]="valor1" [valor2]="valor2"></app-calculadora>
   <div>
     <h4>Resultado</h4>
-    <input type="number" ngModel="{{resultado}}">
+    <input type="number" (resultado)="result($event)">
   </div>
-  <app-calculadora [valor1]="valor1" [valor2]="valor2"></app-calculadora>
 </div>
