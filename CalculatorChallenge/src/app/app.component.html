@@ -1,0 +1,14 @@
+<div>
+  <h1>Calculadora</h1>
+  <div>
+    <h4>Valor 1</h4>
+    <input type="number" [(ngModel)]="valor1">
+    <h4>Valor 2</h4>
+    <input type="number" [(ngModel)]="valor2">
+  </div>
+  <div>
+    <h4>Resultado</h4>
+    <input type="number" ngModel="{{resultado}}">
+  </div>
+  <app-calculadora [valor1]="valor1" [valor2]="valor2"></app-calculadora>
+</div>
